@@ -43,8 +43,8 @@ def rover_out(message): #take in message from client.
             x = str(x)     #cast it to a string.            
             if user_input == x:            
                 x = (int(x)/5) * 255 #convert to PWM value.
-                speed = str(x)  #for contancotancontantacatation.                                                           
-        for x in range(1): #There's a better way to do this :((
+                speed = str(x)                                                            
+        for x in range(1): 
             print("["+moto_drive[x]+speed+"]"+"["+moto_drive[x+1]+speed+"]"+"["+moto_drive[x+2]+speed+"]"+"["+moto_drive[x+3]+speed+"]")                                    
         return 0
         
@@ -53,8 +53,8 @@ def rover_out(message): #take in message from client.
 
 s_soc = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 host = '127.0.0.1' #local host
-port = 1255 #random number. Did not see which ports were open/occupied.
-s_soc.bind((host,port)) #as it says, we bind our server to this port. The client will "meet" us here? (i think that's how it works)
+port = 1255 #random number. 
+s_soc.bind((host,port)) #as it says, we bind our server to this port. The client will "meet" us here? 
 s_soc.listen(2) #we can take 2 if we want to.
 clientmessage, clientaddress = s_soc.accept()
 
