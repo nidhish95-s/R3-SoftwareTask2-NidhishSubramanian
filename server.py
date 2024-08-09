@@ -25,8 +25,6 @@ print("""
     - Press w to move forward, s to move backwards, a for left and d for right.
     - Input is case sensitive, AVOID CAPS.
     - Hit enter to see current heading. 
-    - Hit z for Rover to perform a dance move you can't see. 
-    - Dance speed can be adjusted using the buttons mentioned above.
         
     """)
 def rover_out(message): #take in message from client.
